@@ -29,6 +29,7 @@ gh repo create --source=. --public --remote=github --push
 # --include-all-branches
 # --description="${GIT_USER_NAME}.github.io/${APP_NAME}/"
 # --homepage="${GIT_USER_NAME}.github.io/${APP_NAME}/"
+git remote set-url github "git@github.com:${GIT_USER_NAME}/${APP_NAME}.git" # see https://stackoverflow.com/a/21761136/1697878
 
 # create new GitLab repo:
 # GitLab can create new private repo on first push (see https://stackoverflow.com/a/64656788/1697878)
